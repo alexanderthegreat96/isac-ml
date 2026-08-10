@@ -1,0 +1,93 @@
+{
+  "headshotsPerHour": {
+    "median": 151.0,
+    "std": 129.48134894270225,
+    "mad": 82.0,
+    "binary": false,
+    "p99": 601.0
+  },
+  "bodyshotsPerHour": {
+    "median": 1269.0,
+    "std": 19330.563789010055,
+    "mad": 832.0,
+    "binary": false,
+    "p99": 49972.550000001036
+  },
+  "weaponHitsPerHour": {
+    "median": 1443.0,
+    "std": 19348.317596191144,
+    "mad": 927.0,
+    "binary": false,
+    "p99": 50439.05000000092
+  },
+  "npcKillsPerHour": {
+    "median": 94.0,
+    "std": 86.05136198080439,
+    "mad": 43.0,
+    "binary": false,
+    "p99": 367.0
+  },
+  "percentageOfHeadshots": {
+    "median": 10.265607765969865,
+    "std": 10.059052048050956,
+    "mad": 3.0681765167717514,
+    "binary": false,
+    "p99": 59.31746159620777
+  },
+  "bsToHsRatio": {
+    "median": 8.741264451693805,
+    "std": 100.79674278900417,
+    "mad": 3.0069860813027245,
+    "binary": false,
+    "p99": 179.43189201743857
+  },
+  "headshotKillRatio": {
+    "median": 0.4122729075935421,
+    "std": 0.27627861569235457,
+    "mad": 0.12398535751745321,
+    "binary": false,
+    "p99": 1.3735456145791616
+  },
+  "timePlayed": {
+    "median": 289.0,
+    "std": 1314.5918905862263,
+    "mad": 231.0,
+    "binary": false,
+    "p99": 6469.850000000035
+  },
+  "criticalHitsPerHour": {
+    "median": 298.0,
+    "std": 459.9272774932793,
+    "mad": 264.0,
+    "binary": false,
+    "p99": 1797.0
+  },
+  "percentageOfCriticalHits": {
+    "median": 18.505092301701673,
+    "std": 12.05942056242026,
+    "mad": 10.16209410733911,
+    "binary": false,
+    "p99": 45.23134132643109
+  },
+  "totalHeadshots": {
+    "median": 77036.0,
+    "std": 402334.284869333,
+    "mad": 67174.5,
+    "binary": false,
+    "p99": 1981318.2000000002
+  },
+  "totalBodyshots": {
+    "median": 632996.5,
+    "std": 31185163.16496774,
+    "mad": 584417.0,
+    "binary": false,
+    "p99": 80041640.95000058
+  },
+  "totalCriticalHits": {
+    "median": 149085.0,
+    "std": 1331551.0635344381,
+    "mad": 146047.0,
+    "binary": false,
+    "p99": 6439181.850000005
+  }
+}

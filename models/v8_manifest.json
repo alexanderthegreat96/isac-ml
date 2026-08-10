@@ -1,0 +1,79 @@
+{
+  "ban_threshold": 1000.0,
+  "auto_ban_threshold": 1000.0,
+  "review_band_floor": 700.0,
+  "label_rule_threshold": 805.0,
+  "sklearn_version": "1.9.0",
+  "queue_floor": 700.0,
+  "inflation_factor": 1.0,
+  "seed": 42,
+  "lifetime_features": [
+    "headshotsPerHour",
+    "bodyshotsPerHour",
+    "weaponHitsPerHour",
+    "npcKillsPerHour",
+    "percentageOfHeadshots",
+    "bsToHsRatio",
+    "headshotKillRatio",
+    "timePlayed",
+    "criticalHitsPerHour",
+    "percentageOfCriticalHits"
+  ],
+  "crit_features": [
+    "criticalHitsPerHour",
+    "percentageOfCriticalHits"
+  ],
+  "invariant_features": [
+    "percentageOfHeadshots",
+    "percentageOfCriticalHits",
+    "bsToHsRatio",
+    "headshotKillRatio"
+  ],
+  "report_only_features": [
+    "totalHeadshots",
+    "totalBodyshots",
+    "totalCriticalHits"
+  ],
+  "cheater_scorer": {
+    "name": "cheater_scorer",
+    "features": [
+      "headshotsPerHour",
+      "bodyshotsPerHour",
+      "weaponHitsPerHour",
+      "npcKillsPerHour",
+      "percentageOfHeadshots",
+      "bsToHsRatio",
+      "headshotKillRatio",
+      "timePlayed",
+      "criticalHitsPerHour",
+      "percentageOfCriticalHits"
+    ],
+    "model_file": "v8_cheater_scorer.pkl",
+    "roc_auc": 0.9747324606078897,
+    "model_sha256": "e11c702c7d5db261bdce2accddbd02f7c9c5ed37f85d794df2ccc8e3e6e3891e"
+  },
+  "stage2_models": [
+    {
+      "name": "stage2",
+      "features": [
+        "headshotsPerHour",
+        "bodyshotsPerHour",
+        "weaponHitsPerHour",
+        "npcKillsPerHour",
+        "percentageOfHeadshots",
+        "bsToHsRatio",
+        "headshotKillRatio",
+        "timePlayed",
+        "criticalHitsPerHour",
+        "percentageOfCriticalHits"
+      ],
+      "threshold": 0.9057175465716398,
+      "pr_auc": 0.1275398415951681,
+      "base_rate": 0.002721221613155834,
+      "model_file": "v8_stage2_stage2.pkl",
+      "stats_file": "v8_stats_stage2.json",
+      "model_sha256": "b7a7cbd4c6b4418109eafcdfd9fa90fc042541d2ebae575a54f5a504fb68fad0",
+      "stats_sha256": "5be9f39442b77526ce116c782d31340f7d5ca3a031bd9b41ad53f091f8543b6d"
+    }
+  ]
+}
