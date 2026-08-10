@@ -74,3 +74,6 @@ checkpoint
 *.joblib
 *.pkl
 *.pickle
+
+# Claude related
+.claude
