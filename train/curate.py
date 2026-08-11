@@ -26,13 +26,17 @@ print(df.select(relevant_columns))
 rows = df.to_dicts()
 updated_rows = []
 
+# i should point out
+# this is extremely slow for super large data sets
+# polars has a better way to handle this
+# but it looks weird so ill stick to this impl for now
 for row in rows:
     # made a mistake here
     # should have randomized the usernames and identifier
     # oh well, doing it now
 
     row['username'] = "".join(random.choice(string.ascii_uppercase + string.digits) for _ in range(10))
-    row['identifer'] = str(uuid.uuid4)
+    row['identifier'] = str(uuid.uuid4())
 
     time_played = row.get('timePlayed', 0)
     weapon_hits = row.get('weaponHits', 0)
