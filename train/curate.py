@@ -1,11 +1,15 @@
 from calc import IsacCalculator
 import polars as pl
+import string
+import random
+import uuid
 
 FILE_PATH = "isac-ml-training-dataset.csv"
 
 # i just wanna see these
 relevant_columns = [
-    'username', 
+    'username',
+    'identifier',
     'timePlayed', 
     'weaponHits', 
     'headshots', 
@@ -23,6 +27,13 @@ rows = df.to_dicts()
 updated_rows = []
 
 for row in rows:
+    # made a mistake here
+    # should have randomized the usernames and identifier
+    # oh well, doing it now
+
+    row['username'] = "".join(random.choice(string.ascii_uppercase + string.digits) for _ in range(10))
+    row['identifer'] = str(uuid.uuid4)
+
     time_played = row.get('timePlayed', 0)
     weapon_hits = row.get('weaponHits', 0)
     headshots = row.get('headshots', 0)
@@ -50,7 +61,6 @@ for row in rows:
             kills_npc=row.get('npcKills', 0),
             kills_headshot=row.get('headshotKills', 0)
         )
-        
         
         row['bodyshots'] = calc.bodyshots
         row['headshotsPerHour'] = calc.calculate_headshots_per_hour()

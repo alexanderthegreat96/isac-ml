@@ -384,3 +384,4 @@ Notes:
   deterministic rule; Stage 2 **ranks for human review**, it does not establish cheating.
 - The Division 2 is a trademark of Ubisoft. Respect the terms of service of any game you
   use this with.
+- This revised version of the ISAC-ML has been improved by Claude. It is re-built on top of the logic from the previous models.
